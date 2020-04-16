@@ -13,8 +13,8 @@ One way to implement this is to use a Wavefront Terraform provider
 **Benefits:**
 1. Version control (git)
 2. Programmatic creation, modification, and destruction of alerts and dashboards in Wavefront
-    - no more manually editing in the console or making the same change in more than one place
-    - allows alerts and dashboards to be templatized for easy replication
+    - no more manually navigating between dashboards or making the same change in more than one place
+    - allows alerts and dashboards to be standardized into templates for easy replication
     - can copy/paste existing blocks of code to replicate items quickly and efficiently
 3. Easy tag management 
     - Variables allow us to assign and modify tags on all NOC resources quickly and easily
