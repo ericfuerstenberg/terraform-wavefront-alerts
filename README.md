@@ -7,7 +7,7 @@
 
 I'm proposing that we implement infra as code best practices and create our alerts and dashboards programmatically. Think of this as a move toward a "cattle not pets" model for our alerts and dashboards. You made a change to the metrics we're using for Uploads? No problem - make the change once in the variables.tf file and it immediately applies to all of our existing dashboards/alerts that rely on that  variable.
 
-One way to implement this is to use a Wavefront Terraform provider. 
+One way to implement this is to use a Wavefront Terraform provider\ 
     see: https://github.com/wavefrontHQ/terraform-provider-wavefront
 
 **Benefits:**
