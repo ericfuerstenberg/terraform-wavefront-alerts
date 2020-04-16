@@ -1,5 +1,3 @@
-# terraform-noc-alerts
-
 ## NOC alerting standards
 **All active NOC alerts should be:**
 1. Tied to *current* topline metrics
