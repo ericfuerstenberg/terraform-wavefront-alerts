@@ -1,6 +1,6 @@
 ## NOC alerting standards
 **All active NOC alerts should be:**
-1. Tied to *up-to-date* topline metrics
+1. Tied to *up-to-date* metrics sources
 2. Set to an actionable threshold (e.g., alert fires and NOC begins investigation or escalation to service owner)
 3. Managed via version control (git) and adhere to standardized tagging and naming conventions
 
