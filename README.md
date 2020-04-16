@@ -1,6 +1,6 @@
 # terraform-noc-alerts
 
-*All active NOC alerts should be:*
+**All active NOC alerts should be:**
 1. Tied to current topline metrics
 2. Set to an actionable threshold (e.g., alert fires and NOC begins investigation or escalation to service owner
 3. Managed via version control and adhere to similar tagging and naming conventions
@@ -10,7 +10,7 @@ I'm proposing that we implement infra as code best practices and create our aler
 One way to implement this is to use a Wavefront Terraform provider.
 https://github.com/wavefrontHQ/terraform-provider-wavefront
 
-*This gives us:*
+**This gives us:**
 1. Version control (git)
 2. Programmatic creation, modification, and destruction of alerts and dashboards in Wavefront
 - no more manually editing in the console or making the same change in more than one place
