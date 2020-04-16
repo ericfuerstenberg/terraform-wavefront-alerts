@@ -1,7 +1,7 @@
 # terraform-noc-alerts
 
 **All active NOC alerts should be:**
-1. Tied to current topline metrics
+1. Tied to *current* topline metrics
 2. Set to an actionable threshold (e.g., alert fires and NOC begins investigation or escalation to service owner)
 3. Managed via version control and adhere to similar tagging and naming conventions
 
