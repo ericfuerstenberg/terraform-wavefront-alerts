@@ -1,8 +1,8 @@
 ## NOC alerting standards
 **All active NOC alerts should:**
 1. Use *up-to-date* metrics sources that align with top line dashboards
-2. Be set to an actionable threshold (e.g., alert fires and NOC begins investigation or escalation to service owner)
-3. Maintain an acceptable signal/noise ratio
+2. Be set to an actionable threshold (e.g., IF alert fires THEN noc begins investigation or escalation to service owner)
+3. Maintain an acceptable signal/noise ratio (e.g., 5:1 or >80% signal)
 4. Be managed via version control (git) and adhere to standardized tagging and naming conventions
 
 
