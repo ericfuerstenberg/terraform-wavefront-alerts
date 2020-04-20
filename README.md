@@ -7,7 +7,7 @@
 
 
 ## Alerts as code!
-I propose that we implement industry standard, infrastructure as code best practices to create our alerts and dashboards programmatically. Think of this as a move toward a "cattle not pets" model. You made a change to the metric we're using for Uploads? No problem - make the change once in a config file and it immediately applies to all of our existing dashboards/alerts that currently use that metric.
+I propose that we implement industry standard, infrastructure as code best practices to create our alerts and dashboards programmatically. Think of this as a move toward a "cattle not pets" model. You made a change to the metric we're using for Uploads? No problem - make the change once in a config file and it immediately applies to all of our existing dashboards/alerts that currently use that metric. 
 
 One way to implement this is to use a Wavefront Terraform provider 
     - see: https://github.com/wavefrontHQ/terraform-provider-wavefront
@@ -16,7 +16,7 @@ One way to implement this is to use a Wavefront Terraform provider
 1. Version control (git)
 2. Programmatic creation, modification, and destruction of alerts and dashboards in Wavefront
     - no more manually navigating between dashboards or making the same change in more than one place
-    - allows alerts and dashboards to be standardized into templates
+    - allows alerts and dashboards to be standardized into templates and modules for ease of use
     - can copy/paste existing blocks of code to replicate items quickly and efficiently
 3. Easy tag management 
     - Variables allow us to assign and modify tags on all NOC resources quickly and easily
