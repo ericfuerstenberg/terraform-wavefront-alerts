@@ -1,12 +1,14 @@
-// Alert module input variables
+////////////////////////////////////////
+// Input variables for 'alert' module
+////////////////////////////////////////
 
 
-// Variable that allows us to set our alert names
+// Define alert name
 variable "alert_name" {
 	type = "string"
 }
 
-// Variable that allows us to assign expressions to alerts
+// Assign expressions to alerts
 variable "expression" {
 	type = "string"
 }
@@ -16,8 +18,8 @@ variable "alert_condition" {
 	type = "string"
 }
 
-
-// Defining alert recipients. Can include PD, email, slack, etc.
+// Defining alert recipients
+// Can include PD, email, slack, etc.
 variable "email-target" {
 	type = "string"
 	default = "efuerstenberg@box.com"
@@ -32,7 +34,8 @@ variable "tags" {
 	]
 }
 
-// Defining logic for when alerts fire and resolve. Value represents the number of minutes where condition must be met before the alert fires or resolves. 
+// Defining logic for when alerts fire and resolve. 
+// Value represents the number of minutes where condition must be met before the alert fires or resolves. 
 variable "fire" {
 	type = "string"
 	default = 1
@@ -43,7 +46,8 @@ variable "resolve" {
 	default = 5
 }
 
-// All NOC topline alerts should be `SEVERE` status
+// Define severity for alert 
+// Note: all NOC topline alerts should be 'SEVERE' status
 
 variable "severity" {
 	type = "string"

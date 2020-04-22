@@ -1,10 +1,14 @@
+///////////////////
+// Main variables
+///////////////////
+
 // Wavefront API token for programmatic access
 // First, set an environment variable.. e.g.,
 // $ export TF_VAR_api_token='api-key-here'
 variable api_token {}
 
-// Defining alert metrics
 
+// Defining specific alert metrics
 variable "api-failure-expression" {
 	type = "string"
 	default = "100* (sum(rate(ts(api-gateway*.5xx-gateway-status-code-count.count , namespace=\"api-gateway-prod\" and cluster_group=\"us-las-prod-ava\")))/sum(rate(ts(api-gateway*.request-count.count , namespace=\"api-gateway-prod\" and cluster_group=\"us-las-prod-ava\"))))"
