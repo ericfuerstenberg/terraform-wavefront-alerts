@@ -1,38 +1,10 @@
-
 // Wavefront API token for programmatic access
 // First, set an environment variable.. e.g.,
 // $ export TF_VAR_api_token='api-key-here'
-variable api_token {}
-
-// Defining alert recipients. Can include PD, email, slack, etc.
-variable "email-target" {
+variable api_token {
 	type = "string"
-	default = "efuerstenberg@box.com"
+	default = "dbde61aa-cb7b-4fe9-b6fd-023f2466c92a"
 }
-
-// Defining common list of tags to be applied to each alert
-variable "tags" {
-	type = "list"
-}
-
-// Defining logic for when alerts fire and resolve
-variable "fire" {
-	type = "string"
-	default = 1
-}
-
-variable "resolve" {
-	type = "string"
-	default = 5
-}
-
-// All NOC topline alerts should be `SEVERE` status
-
-variable "severity" {
-	type = "string"
-	default = "SEVERE"
-}
-
 
 // Defining alert metrics
 
