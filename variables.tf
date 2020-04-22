@@ -1,10 +1,7 @@
 // Wavefront API token for programmatic access
 // First, set an environment variable.. e.g.,
 // $ export TF_VAR_api_token='api-key-here'
-variable api_token {
-	type = "string"
-	default = "dbde61aa-cb7b-4fe9-b6fd-023f2466c92a"
-}
+variable api_token {}
 
 // Defining alert metrics
 
