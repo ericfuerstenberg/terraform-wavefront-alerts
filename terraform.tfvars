@@ -1,1 +1,1 @@
-tags = [ "noc-topline-alerts", "terraform", "eric-test" ]
+tags = [ "noc.topline", "terraform", "eric-test" ]

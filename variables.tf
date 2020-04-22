@@ -15,7 +15,27 @@ variable "tags" {
 	type = "list"
 }
 
+// Defining logic for when alerts fire and resolve
+variable "fire" {
+	type = "string"
+	default = 1
+}
+
+variable "resolve" {
+	type = "string"
+	default = 5
+}
+
+// All NOC topline alerts should be `SEVERE` status
+
+variable "severity" {
+	type = "string"
+	default = "SEVERE"
+}
+
+
 // Defining alert metrics
+
 variable "api-failure-expression" {
 	type = "string"
 	default = "100* (sum(rate(ts(api-gateway*.5xx-gateway-status-code-count.count , namespace=\"api-gateway-prod\" and cluster_group=\"us-las-prod-ava\")))/sum(rate(ts(api-gateway*.request-count.count , namespace=\"api-gateway-prod\" and cluster_group=\"us-las-prod-ava\"))))"
