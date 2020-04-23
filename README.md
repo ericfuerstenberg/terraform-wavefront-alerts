@@ -7,11 +7,12 @@
 
 
 ## Alerts as code!
-Configuring monitoring by hand is fragile and tedious:
-    - Setting up a new dashboard? You have to clone an existing dashboard, or migrate charts one by one, tweaking each as needing
-    - Setting up new alerts? Copy/paste alert expressions and conditions, double check that you have your fire/resolve values set, etc.
-    - How do I verify that all alerts have the necessary tags, or charts have the same thresholds?
-    - *Too many manual touchpoints!*
+Configuring monitoring by hand is fragile and tedious
+- Setting up a new dashboard? You have to clone an existing dashboard, or migrate charts one by one, tweaking each as needed.
+- Setting up new alerts? Copy/paste alert expressions and conditions, double check that you have your fire/resolve values set, etc.
+- How do I verify that all alerts have the necessary tags, or charts have the same thresholds?
+
+*Arghh! Why so many manual touchpoints?!*
 
 Instead, we can borrow core infrastructure-as-code (IaC) techniques to make configuring our alerts/dashboards repeatable and programmatic. Think of this as a move toward a "cattle not pets" model. You made a change to the metric we're using for one service? No problem - make the change once in a config file and it immediately applies to all of our existing dashboards/alerts that currently use that metric. 
  
