@@ -17,9 +17,9 @@ One way to implement this is to use a Wavefront Terraform provider
     - can copy/paste existing blocks of code to replicate items quickly and efficiently
 2. Version control (git)
 3. Easy tag management 
-    - Variables allow us to assign and modify tags on all NOC resources quickly and easily
+    - Variables allow us to assign and modify tags on all team resources quickly and easily
 4. Programmatic update of alert targets
-    - add/remove/modify pagerduty escalation targets, email lists, slack webhooks, etc
+    - add/remove/modify Pagerduty escalation targets, email lists, Slack webhooks, etc
 
 ## Alerting standards
 **All active alerts should:**
