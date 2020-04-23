@@ -5,7 +5,7 @@
 *Arghh! Why so many manual touchpoints?!*
 
 ### How can I make this process repeatable and programmatic?
-Instead, we can borrow core infrastructure-as-code (IaC) techniques to make configuring our alerts/dashboards repeatable and programmatic. Think of this as a move toward a "cattle not pets" model. You made a change to the metric we're using for one service? No problem - make the change once in a config file and it immediately applies to all of our existing dashboards/alerts that currently use that metric. 
+Instead, we can borrow core infrastructure-as-code (IaC) techniques to make configuring our alerts/dashboards repeatable and programmatic. Think of this as a move toward a "cattle not pets" model. You made a change to the metric we're using for one service? No problem - make the change once in a config file and it immediately modifies all of our existing dashboards/alerts that currently use that metric. 
  
 One way to implement this is to use a Wavefront Terraform provider 
     - see: https://github.com/wavefrontHQ/terraform-provider-wavefront
