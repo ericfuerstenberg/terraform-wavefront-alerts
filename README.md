@@ -10,7 +10,7 @@ Instead, we can borrow core infrastructure-as-code (IaC) techniques to make conf
 One way to implement this is to use a Wavefront Terraform provider 
     - see: https://github.com/wavefrontHQ/terraform-provider-wavefront
 
-**Benefits:**
+**Benefits of an alerts as code approach:**
 1. Programmatic creation, modification, and destruction of alerts and dashboards in Wavefront
     - no more manually navigating between dashboards or making the same change in more than one place
     - allows alerts and dashboards to be standardized into templates and modules for ease of use
