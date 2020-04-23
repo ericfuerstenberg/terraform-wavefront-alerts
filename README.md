@@ -1,11 +1,3 @@
-## Alerting standards
-**All active alerts should:**
-1. Use *up-to-date* metric sources that align with top line dashboards
-2. Be set to an actionable threshold (e.g., if alert fires then team begins investigation or escalation to service owner)
-3. Maintain an acceptable signal/noise ratio (e.g., 5:1 or >80% signal)
-4. Be managed via version control (git) and adhere to standardized tagging and naming conventions
-
-
 ## Alerts as code!
 ### Configuring monitoring by hand is fragile and tedious. 
 *Setting up a new dashboard?* You have to clone an existing dashboard, or migrate charts one by one, tweaking each as needed. *Creating new alerts?* Copy/paste alert expressions and conditions, double check that you have your fire/resolve values set, etc. 
@@ -30,3 +22,13 @@ One way to implement this is to use a Wavefront Terraform provider
     - Variables allow us to assign and modify tags on all NOC resources quickly and easily
 4. Programmatic update of alert targets
     - add/remove/modify pagerduty escalation targets, email lists, slack webhooks, etc
+
+## Alerting standards
+**All active alerts should:**
+1. Use *current* metric sources that align with top line dashboards
+2. Be set to an actionable threshold (e.g., if alert fires then team begins investigation or escalation to service owner)
+3. Maintain an acceptable signal/noise ratio (e.g., 5:1 or >80% signal)
+4. Be managed via version control (git)
+5. Adhere to standardized tagging and naming conventions
+6. Be created and managed programmatically, not manually
+
