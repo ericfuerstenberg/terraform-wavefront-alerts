@@ -22,15 +22,15 @@ variable "alert_condition" {
 // Can include PD, email, slack, etc.
 variable "email-target" {
 	type = "string"
-	default = "efuerstenberg@box.com"
+	default = "youremail@default.com"
 }
 
 // Defining common list of tags to be applied to each alert
 variable "tags" {
 	type = "list"
 	default = [
-		"noc.terraform",
-		"eric-test"
+		"terraform",
+		"test"
 	]
 }
 
@@ -47,7 +47,7 @@ variable "resolve" {
 }
 
 // Define severity for alert 
-// Note: all NOC topline alerts should be 'SEVERE' status
+// Note: all alerts should be 'SEVERE' status
 
 variable "severity" {
 	type = "string"
