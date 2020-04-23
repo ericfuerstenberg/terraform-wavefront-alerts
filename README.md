@@ -1,8 +1,6 @@
 ## Alerts as code!
 ### Configuring monitoring by hand is fragile and tedious. 
-*Setting up a new dashboard?* You have to clone an existing dashboard, or migrate charts one by one, tweaking each as needed. *Creating new alerts?* Copy/paste alert expressions and conditions, double check that you have your fire/resolve values set, etc. 
-
-But wait.. how do I verify that all alerts across my environment have the appropriate tags, or charts have the same thresholds? Do I seriously have to navigate the UI and look at each one individually?
+*Setting up a new dashboard?* You have to clone an existing dashboard, or migrate charts one by one, tweaking each as needed. *Creating new alerts?* Copy/paste alert expressions and conditions, double check that you have your fire/resolve values set, etc. *Updating existing alerts or dashboards?* My team switched metrics sources and all of our alerts and dashboard are broken. Do I seriously have to navigate the UI and fix each one individually?
 
 *Arghh! Why so many manual touchpoints?!*
 
