@@ -1,4 +1,4 @@
-## Nlerting standards
+## Alerting standards
 **All active alerts should:**
 1. Use *up-to-date* metric sources that align with top line dashboards
 2. Be set to an actionable threshold (e.g., if alert fires then team begins investigation or escalation to service owner)
