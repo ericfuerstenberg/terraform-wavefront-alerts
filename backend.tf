@@ -1,6 +1,6 @@
 // Define the S3 bucket you would like to use as your terraform backend to store your .tfstate file
 // Create a dynamo-db table to handle locking the state of your .tfstate file
-// Assign an aws cli profile to your service account
+// Configure an aws cli profile to your service account
 
 terraform {
  backend "s3" {
