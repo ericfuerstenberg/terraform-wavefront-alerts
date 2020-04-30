@@ -15,7 +15,7 @@ One way to implement this is to use a Wavefront Terraform provider
     - no more manually navigating between dashboards or making the same change in more than one place
     - allows alerts and dashboards to be standardized into templates and modules for ease of use
     - can copy/paste existing blocks of code to replicate items quickly and efficiently
-2. Version control (git)
+2. Version control (git) and quality control via reviews
 3. Easy tag management 
     - Variables allow us to assign and modify tags on all team resources quickly and easily
 4. Programmatic update of alert targets
